@@ -1,6 +1,6 @@
 const fetchData = require("./fetchData");
 
-test("Data is Anjas Gantenk", (done) => {
+test("The Data is Anjas Gantenk", (done) => {
   const callback = (data) => {
     try {
       expect(data).toBe("Anjas Gantenk");
