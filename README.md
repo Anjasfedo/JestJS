@@ -68,6 +68,22 @@ powerfull testing for javascript framework
 31. now back to sum.test.js, and create const variable name myFunction with value require of the file of myFunction that sum
 32. so on expect callback function we change the argument to some string like:
 33. now try the test with npm test
-34. 
 
+===
+
+## Testing Asynchronous Code
+1. test asynchronus code is quite complex, not such straighforward
+2. asyncronus code allow to execute some code on background, not blocking the main execution
+3. web need asynchronus because keep ui to responsive while do request or timer
+4. there is some method of async such as callback, promise, and async function
+5. first the callback, lets start by write new function called fetchData with parameter callback
+6. and do setTimeout with callback function callback('peanut butter') and time 1000
+7. new we gonna test this function, be sure to export the function
+8. create test with description the data is peanut butter
+9. then for second parameter make done => {}
+10. done contain function callback(data)
+11. and do try with expect(data) toBe('peanut butter') and add done()
+12. on catch error, add done(error)
+13. then after the callback function, add fetchData(callback)
+14. and we can try the test with npm test
 
