@@ -126,9 +126,14 @@ resolve('peanut butter') in 1000
 13. with function the before function of mockCallback
 14. now expect mock(1) toBe(43)
 15. now try the test with npm test
-16. 
-
-
-
-
-
+16. then add expect mock toHaveBeenCalledWith(1)
+17. this statement check if the mock call by correct argument
+18. then run test too
+19. next is spies, we gonna make new test with desctiption spying on a method of an object
+20. with function that have variable called video
+21. video have value of object then a method play() { return true }
+22. then add const spy with value jest.spyOn(video, 'play')
+23. then add video.play()
+24. and expect spy. toHaveBeenCalled()
+25. and do sply.mockRestore()
+26. so we can run the test
