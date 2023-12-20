@@ -100,3 +100,10 @@ resolve('peanut butter') in 1000
 25. now also create the test on reject
 22. with desctipiton the fetch fails with an error 
 23. then callback function that return expect(fetchPromise()).rejects.toThrow('error')
+24. now we talk about async await function
+25. now to do async await test, we create new test with description the data is peanut butter
+26. follow by async function, that have const variable call data with value await fetchPromise()
+27. and expect data toBe('peanut butter')
+28. the async will significe the callback funtion will be an asynchronus
+29. the await is keyword of async, this wait the function to return the result
+30. now we gonna run the test with npm test
