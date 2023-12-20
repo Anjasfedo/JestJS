@@ -78,12 +78,25 @@ powerfull testing for javascript framework
 4. there is some method of async such as callback, promise, and async function
 5. first the callback, lets start by write new function called fetchData with parameter callback
 6. and do setTimeout with callback function callback('peanut butter') and time 1000
-7. new we gonna test this function, be sure to export the function
+7. new we gonna test this function, be sure to export the function, the code be like: 
 8. create test with description the data is peanut butter
 9. then for second parameter make done => {}
 10. done contain function callback(data)
 11. and do try with expect(data) toBe('peanut butter') and add done()
 12. on catch error, add done(error)
-13. then after the callback function, add fetchData(callback)
+13. then after the callback function, add fetchData(callback). the code gonna be like: 
 14. and we can try the test with npm test
-
+15. next we gonna try promise
+16. first we need to create a function with promise
+17. create function name fetchPromise with return new Promise
+18. with parameter resolve and reject, then use setTimeout to
+resolve('peanut butter') in 1000
+19. now make sure to export this function
+20. and create test for the promise, we need to import the function with require method
+21. then write test with description the data is peanut butter
+22. with second parameter a callback that return expect the function
+23. follow by resolves.toBe('peanut butter')
+24. then we can do npm test to run the test
+25. now also create the test on reject
+22. with desctipiton the fetch fails with an error 
+23. then callback function that return expect(fetchPromise()).rejects.toThrow('error')
