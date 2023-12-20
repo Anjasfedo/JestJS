@@ -107,3 +107,28 @@ resolve('peanut butter') in 1000
 28. the async will significe the callback funtion will be an asynchronus
 29. the await is keyword of async, this wait the function to return the result
 30. now we gonna run the test with npm test
+
+===
+
+## Mock Functions and Spies
+1. mock is fake implementation of real function
+2. and spies are tools that use to track the behavior of those function 
+3. such the function is called or how many it has called, and with what argument of the function
+4. mocking used to isolate unit of code being tested, this prevent test from being affected by external factors
+5. now lets try mock function in jest
+6. we gonna use jest.fn the way to create mock function
+7. first we create new const variable name mockCallback with value jest.fn 
+8. and have argument of a function x => 42 + x
+9. and we can call mockCallback(0) or mockCallback(1)
+10. that gonna make jest.fn contain 43
+11. now to test the mock function with jest
+12. write test with descripiton mock implementation of basic function
+13. with function the before function of mockCallback
+14. now expect mock(1) toBe(43)
+15. now try the test with npm test
+16. 
+
+
+
+
+
